@@ -33,21 +33,34 @@ Electron
 
 Próximamente: imágenes de las principales funciones de la aplicación.
 
-💻 Instalación
+## 💻 Descarga e instalación
 
-Para ejecutar el proyecto desde el código fuente, necesitás tener Node.js y npm instalados.
+### Instalador para Windows
 
-Cloná este repositorio.
+Podés descargar el instalador de Windows desde la sección [Releases](../../releases) de este repositorio.
 
-Abrí una terminal en la carpeta del proyecto.
+1. Descargá el archivo `.exe` de la versión publicada.
+2. Ejecutalo en Windows.
+3. Seguí las instrucciones del instalador.
 
-Instalá las dependencias:
+### Ejecutar desde el código fuente
 
-npm install
+Si querés ejecutar o modificar el proyecto desde el código fuente, necesitás Node.js y npm.
 
-Iniciá la aplicación:
+1. Cloná este repositorio.
+2. Abrí una terminal en la carpeta del proyecto.
+3. Instalá las dependencias:
 
-npm start
+   ```bash
+   npm install
+   ```
+
+4. Iniciá la aplicación:
+
+   ```bash
+   npm start
+   ```
+
 
 ⚠️ Aviso
 
