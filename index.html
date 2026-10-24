@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';" />
+<link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Rubinot RC Profit Calculator</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo-sidebar.png" alt="Rubinot RC">
+      <div>
+        <div class="brand-title">Rubinot RC</div>
+        <div class="brand-sub">Profit Calculator</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item active" data-view="dashboard">📊 Dashboard</button>
+      <button class="nav-item" data-view="calculator">🧮 Calculadora RC</button>
+      <button class="nav-item" data-view="market">💱 Compras y Ventas</button>
+      <button class="nav-item" data-view="capital">🏦 Capital</button>
+      <button class="nav-item" data-view="investment">💵 Inversión RC</button>
+      <button class="nav-item" data-view="reinvestment">📈 Reinversión</button>
+      <button class="nav-item" data-view="statistics">📉 Estadísticas</button>
+      <button class="nav-item" data-view="history">🕘 Historial</button>
+      <button class="nav-item" data-view="settings">⚙️ Configuración</button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="save-indicator" id="saveIndicator">Datos guardados localmente</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <div class="top-actions">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <div class="action-menu" id="actionMenu">
+        <button id="menuBuy">+ COMPRA</button>
+        <button id="menuSell">+ VENTA</button>
+        <button id="menuExtra">+ EXTRA</button>
+      </div>
+    </div>
+
+    <div id="view-root"></div>
+  </main>
+</div>
+
+<!-- Modal genérico -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalBox"></div>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/market.js"></script>
+<script src="js/hunts.js"></script>
+<script src="js/inventory.js"></script>
+<script src="js/cash.js"></script>
+<script src="js/capital.js"></script>
+<script src="js/investment.js"></script>
+<script src="js/reinvestment.js"></script>
+<script src="js/statistics.js"></script>
+<script src="js/history.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

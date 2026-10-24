@@ -1,0 +1,51 @@
+{
+  "name": "rubinot-rc-profit-calculator",
+  "version": "1.0.0",
+  "description": "Aplicacion de escritorio para controlar operaciones de RubiniCoins (RC), hunts, mercado, inventario y caja diaria - 100% local/offline.",
+  "main": "main.js",
+  "author": "Rubinot RC Tools",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "24.6.3"
+  },
+  "build": {
+    "appId": "com.rubinot.rcprofitcalculator",
+    "productName": "Rubinot RC Profit Calculator",
+    "artifactName": "Rubinot-RC-Profit-Calculator-Setup.exe",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "css/**/*",
+      "js/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
